@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nixie-timer/static/css/main.9a849f15.css",
+    "main.js": "/nixie-timer/static/js/main.e34adafe.js",
+    "static/js/787.87ca890f.chunk.js": "/nixie-timer/static/js/787.87ca890f.chunk.js",
+    "static/media/nixie_0.png": "/nixie-timer/static/media/nixie_0.01b4c2364f3f4abce44d.png",
+    "static/media/nixie_8.png": "/nixie-timer/static/media/nixie_8.24aa9bb94c90ef73c9ea.png",
+    "static/media/nixie_1.png": "/nixie-timer/static/media/nixie_1.c8b55a92eea167919689.png",
+    "static/media/nixie_9.png": "/nixie-timer/static/media/nixie_9.4163ebc119b4aa2db0f6.png",
+    "static/media/nixie_2.png": "/nixie-timer/static/media/nixie_2.1ace11c9b0e1ad864849.png",
+    "static/media/nixie_6.png": "/nixie-timer/static/media/nixie_6.926c7cffd1793eee6130.png",
+    "static/media/nixie_3.png": "/nixie-timer/static/media/nixie_3.35c078adb6846cb03a7d.png",
+    "static/media/nixie_7.png": "/nixie-timer/static/media/nixie_7.d349de3b4cc88bbfb95b.png",
+    "static/media/nixie_5.png": "/nixie-timer/static/media/nixie_5.ee9720a3dae1194c34f6.png",
+    "static/media/nixie_4.png": "/nixie-timer/static/media/nixie_4.a513cbb95d558ebd7819.png",
+    "static/media/nixie_colon.png": "/nixie-timer/static/media/nixie_colon.95980cb406638d6bde38.png",
+    "index.html": "/nixie-timer/index.html",
+    "main.9a849f15.css.map": "/nixie-timer/static/css/main.9a849f15.css.map",
+    "main.e34adafe.js.map": "/nixie-timer/static/js/main.e34adafe.js.map",
+    "787.87ca890f.chunk.js.map": "/nixie-timer/static/js/787.87ca890f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a849f15.css",
+    "static/js/main.e34adafe.js"
+  ]
+}
