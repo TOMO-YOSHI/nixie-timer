@@ -1,38 +1,181 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 0 32px;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  /* position: relative;
+  margin: 0 16px;
+  padding: 4px 2px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1.0px solid rgba(255, 255, 255, 0.35);
+  -webkit-box-shadow: 0px 0px 47px -9px rgba(255,176,69,0.39); 
+  box-shadow: 0px 0px 47px -9px rgba(255,176,69,0.39); */
+}
+
+/* .glass {
+  position: absolute;
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(0.2px);
+  -webkit-backdrop-filter: blur(0.2px);
+} */
+
+li img {
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .hours {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 767px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.buttons {
+  margin-top: 64px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button { 
+  border: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.metal {
+  position: relative;
+  outline: none;
+  font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  color: hsla(0,0%,20%,1);
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  
+  background-color: hsl(0,0%,90%);
+}
+
+/* Radial ------------------------- */
+
+.radial.metal {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 80px;
+  background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+
+
+.metal.radial:before, .metal.radial:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  
+  /* fake conical gradients */
+  background-image: -webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { transform: rotate( 65deg); }
+.metal.radial:after { transform: rotate(-65deg); }
+
+
+
+
+/* Linear ------------------------- */
+
+.metal.linear {
+  width: 120px;
+  font-size: 24px;
+  height: 80px;
+  border-radius: .5em;
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+}
+
+
+/* Oval ------------------------- */
+
+.metal.linear.oval {
+  margin-top: 100px;
+  width: 70px;
+  height: 60px;
+  line-height: 60px !important;
+  border-radius: 50%;
+  font: italic bold 3em/50px Georgia, "Times New Roman", Times, serif;
+}
+
+.radial {
+  font-size: 24px;
+}
+
+
+/* active ------------------------- */
+
+.metal:active {
+  color: hsl(210, 100%, 40%);
+  text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  box-shadow: 
+    inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
+}
+
+.timer_on {
+  color: hsl(210, 100%, 40%);
+  text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  box-shadow: 
+    inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
 }
