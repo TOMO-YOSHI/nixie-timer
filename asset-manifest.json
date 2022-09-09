@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nixie-timer/static/css/main.28c384d1.css",
+    "main.css": "/nixie-timer/static/css/main.0ba180f4.css",
     "main.js": "/nixie-timer/static/js/main.9f72921e.js",
     "static/js/787.87ca890f.chunk.js": "/nixie-timer/static/js/787.87ca890f.chunk.js",
     "static/media/nixie_0.png": "/nixie-timer/static/media/nixie_0.01b4c2364f3f4abce44d.png",
@@ -15,12 +15,12 @@
     "static/media/nixie_4.png": "/nixie-timer/static/media/nixie_4.a513cbb95d558ebd7819.png",
     "static/media/nixie_colon.png": "/nixie-timer/static/media/nixie_colon.95980cb406638d6bde38.png",
     "index.html": "/nixie-timer/index.html",
-    "main.28c384d1.css.map": "/nixie-timer/static/css/main.28c384d1.css.map",
+    "main.0ba180f4.css.map": "/nixie-timer/static/css/main.0ba180f4.css.map",
     "main.9f72921e.js.map": "/nixie-timer/static/js/main.9f72921e.js.map",
     "787.87ca890f.chunk.js.map": "/nixie-timer/static/js/787.87ca890f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28c384d1.css",
+    "static/css/main.0ba180f4.css",
     "static/js/main.9f72921e.js"
   ]
 }
