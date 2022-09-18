@@ -45,21 +45,14 @@ li img {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 666px) {
   .hours {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .buttons {
-  margin-top: 64px;
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +80,7 @@ button {
 
 /* Radial ------------------------- */
 
-.radial.metal {
+.metal.radial {
   width: 120px;
   height: 120px;
   line-height: 120px;
@@ -179,3 +172,36 @@ button {
     inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
     inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
 }
+
+@media screen and (max-width: 575px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .metal.radial {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .metal.linear {
+    width: 80px;
+    height: 60px;
+    font-size: 18px;
+  } */
+
+}
+
+  .metal.radial {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .metal.linear {
+    width: 80px;
+    height: 60px;
+    font-size: 18px;
+  }
+

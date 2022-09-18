@@ -39,6 +39,13 @@ function App() {
       clearInterval(stopIntervel);
     },
     [stopIntervel],
+  );
+
+  const resetTimer = useCallback(
+    () => {
+      setTime(0);
+    },
+    [],
   )
 
   useEffect(()=>{
@@ -275,8 +282,10 @@ function App() {
             className="metal linear"
             onClick={stopTimer}
           >Stop</button>
-          {/* <button className="metal linear">1</button>
-          <button className="metal linear">0</button> */}
+          <button
+            className="metal linear"
+            onClick={resetTimer}
+          >Reset</button>
         </div>
       </div>
     </div>
